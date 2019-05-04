@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:minHeight="250dp"
+    tools:context=".Fragments.BottomFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/enterPasswordLength"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:backgroundTint="@color/colorAccent"
+        android:id="@+id/ed_length"
+        android:hint="@string/passwordLengthHint" />
+
+
+    <com.google.android.material.button.MaterialButton
+        app:backgroundTint="@color/colorAccent"
+        app:cornerRadius="20dp"
+        android:layout_width="150dp"
+        android:id="@+id/btn_generate"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/btn_gen" />
+
+
+</LinearLayout>
+

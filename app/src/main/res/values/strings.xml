@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Password Generator</string>
+    <string name="enterPasswordLength">Enter password length below </string>
+    <string name="passwordLengthHint">Password Length</string>
+    <string name="btn_gen">Generate</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete</string>
+    <string name="passwordTitle">Password Title</string>
+    <string name="password">Password</string>
+</resources>
