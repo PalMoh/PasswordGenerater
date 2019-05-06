@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">كلمات المرور</string>
+    <string name="enterPasswordLength">ادخل كلمة طول كلمة المرور في الاسفل</string>
+    <string name="passwordLengthHint">طول كلمة المرور</string>
+    <string name="btn_gen">توليد كلمة مرور</string>
+    <string name="btn_save">حفظ</string>
+    <string name="btn_delete">حذف</string>
+    <string name="passwordTitle">عنوان كلمة المرور</string>
+    <string name="password">كلمة المرور</string>
+</resources>

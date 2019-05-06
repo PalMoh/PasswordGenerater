@@ -41,7 +41,7 @@ public class PasswordInfoActivity extends AppCompatActivity {
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(db.deleteTitle(id)){
+                if(db.deletePassword(id)){
                     Toast.makeText(PasswordInfoActivity.this, "DONE ", Toast.LENGTH_SHORT).show();
                     onBackPressed();
 
