@@ -5,6 +5,19 @@
     <string name="btn_gen">Generate</string>
     <string name="btn_save">Save</string>
     <string name="btn_delete">Delete</string>
-    <string name="passwordTitle">Password Title</string>
-    <string name="password">Password</string>
+    <string name="passwordTitle">Password Title: </string>
+    <string name="password">Password: </string>
+    <string name="passwordStrength">Strength: </string>
+    <string name="enter_title_here">Type Title here</string>
+
+    <!-- toast messages -->
+    <string name="saved">Saved :)</string>
+    <string name="fail_to_save">Fail To Save :( </string>
+    <string name="enter_password_title">Password Title Required</string>
+    <string name="delete_done">Done ✓ </string>
+    <string name="enter_length">Password Length Required</string>
+
+    <!-- menu -->
+    <string name="action_settings">Settings</string>
+
 </resources>

@@ -15,9 +15,7 @@ import com.techlearn.Fragments.BottomFragment;
 import com.techlearn.Model.Password;
 import com.techlearn.R;
 
-import static com.techlearn.Constants.PASSWORD_ID_EXTRA;
-import static com.techlearn.Constants.PASSWORD_TITLE_EXTRA;
-import static com.techlearn.Constants.PASSWORD_VALUE_EXTRA;
+import static com.techlearn.Constants.PASSWORD_OBJECT_EXTRA;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,9 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(Password p) {
 
                 Intent intent = new Intent(MainActivity.this,PasswordInfoActivity.class);
-                intent.putExtra(PASSWORD_TITLE_EXTRA,p.getTitle());
-                intent.putExtra(PASSWORD_VALUE_EXTRA,p.getPassword());
-                intent.putExtra(PASSWORD_ID_EXTRA,p.getId());
+                intent.putExtra(PASSWORD_OBJECT_EXTRA,p);
                 startActivity(intent);
                 finish();
             }

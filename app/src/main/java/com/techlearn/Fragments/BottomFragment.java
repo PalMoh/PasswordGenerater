@@ -22,7 +22,7 @@ import com.techlearn.R;
 import java.util.Objects;
 import java.util.Random;
 
-import static com.techlearn.Constants.PASSWORD_EXTRA;
+import static com.techlearn.Constants.PASSWORD_VALUE_EXTRA;
 
 
 /**
@@ -49,7 +49,7 @@ public class BottomFragment extends BottomSheetDialogFragment {
             @Override
             public void onClick(View v) {
                 if(TextUtils.isEmpty(edLength.getText())){
-                    Toast.makeText(getActivity(), "Enter Password Lenght", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), Objects.requireNonNull(getActivity()).getResources().getString(R.string.enter_length), Toast.LENGTH_SHORT).show();
                     return;
                 }
                 int length = Integer.parseInt(edLength.getText().toString());
@@ -64,7 +64,7 @@ public class BottomFragment extends BottomSheetDialogFragment {
 
     private void startActivity(String password){
         Intent intent = new Intent(getActivity(), PasswordActivity.class);
-        intent.putExtra(PASSWORD_EXTRA,password);
+        intent.putExtra(PASSWORD_VALUE_EXTRA,password);
         startActivity(intent);
         Objects.requireNonNull(getActivity()).finish();
     }

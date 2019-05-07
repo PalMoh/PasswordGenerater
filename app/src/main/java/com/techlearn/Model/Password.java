@@ -1,6 +1,8 @@
 package com.techlearn.Model;
 
-public class Password {
+import java.io.Serializable;
+
+public class Password implements Serializable {
 
     private String title;
     private String password;
