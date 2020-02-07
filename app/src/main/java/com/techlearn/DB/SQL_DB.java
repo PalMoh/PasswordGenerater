@@ -25,9 +25,11 @@ public class SQL_DB extends SQLiteOpenHelper {
     ///// Create Table //////////
     private static final String CREATE_TABLE_ =
             "CREATE TABLE " + TABLE_NAME + " (" +
-             ID + "INTEGER PRIMARY KEY AUTOINCREMENT," +
-             PASSWORD +"TEXT," +
-             TITLE +"TEXT)";
+             ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+             PASSWORD +" TEXT," +
+             TITLE +" TEXT)";
+
+    
 
     public SQL_DB(@Nullable Context context) {
         super(context, DB_NAME, null, DB_VERSION);
